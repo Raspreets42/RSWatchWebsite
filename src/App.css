@@ -1,38 +1,128 @@
-.App {
-  text-align: center;
+#heading{
+    font-size: 40px;
+    font-style: italic;
+}
+.shape{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 45px;
+    margin-bottom: 50px;
+}
+.circle{
+    border: 3px solid black;
+    border-radius: 150px;
+    width: 400px;
+    height: 400px;
+    box-shadow: 10px 5px 2px grey;
+    margin-top: 40px;
+    margin-bottom: 45px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: radial-gradient(white , rgb(34, 34, 34));
+}
+#mytime{
+    font-size: 40px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+    font-weight: bold;
+}
+#mydate{
+    font-size: 20px;
+    font-style: italic;
+    font-weight: bold;
+}
+@media (min-width: 360px) and (max-width:575px) {
+    #heading{
+        font-size: 30px;
+    }
+    .circle{
+        width: 300px;
+        height: 300px; 
+        border-radius: 80px;
+    }
+    #mytime{
+        font-size: 30px;
+    }
+    #mydate{
+        font-size: 15px;
+    }
+}
+@media (min-width: 260px) and (max-width:359px) {
+    #heading{
+        font-size: 20px;
+    }
+    .circle{
+        width: 200px;
+        height: 200px; 
+        border-radius: 50px;
+    }
+    #mytime{
+        font-size: 20px;
+    }
+    #mydate{
+        font-size: 10px;
+    }
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.about{
+    border: 2px solid black;
+    border-radius: 15px;
+    margin: 40px 80px 40px 80px;
+    padding: 5px 50px;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .crdhead{
+    font-size: 25px;
   }
-  to {
-    transform: rotate(360deg);
+  .crdspace{
+    display: flex;
+    justify-content: center;
   }
-}
+  .crd{
+    width: 18rem;
+  }
+ 
+  @media (min-width: 440px) and (max-width: 515px) { 
+    .crdhead{
+        font-size: 16px;
+      }
+  }
+  @media (min-width: 330px) and (max-width:439px) { 
+    .about{
+        margin: 40px 50px 40px 50px;
+        padding: 5px 20px;
+    }
+    .texted{
+      font-size: 14px;
+    }
+    .crd{
+      width: 12rem;
+    }
+    .crdhead{
+      font-size: 15px;
+    }
+    .crdli{
+      font-size: 15px;
+    }
+  }
+  
+  @media (min-width: 250px) and (max-width:329px) { 
+    .about{
+        margin: 40px 50px 40px 50px;
+        padding: 5px 20px;
+    }
+    .texted{
+      font-size: 12px;
+    }
+    .crd{
+      width: 8rem;
+    }
+    .crdhead{
+      font-size: 10px;
+    }
+    .crdli{
+      font-size: 10px;
+    }
+  }
